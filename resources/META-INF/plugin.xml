@@ -1,0 +1,39 @@
+<idea-plugin>
+  <id>com.pestretsov.plugin</id>
+  <name>Konfig DSL plugin</name>
+  <version>1.0</version>
+  <vendor email="pestretsov@me.com">Artemy Pestretsov</vendor>
+
+  <description><![CDATA[
+      Enter short description for your plugin here.<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <idea-version since-build="173.0"/>
+
+  <depends>org.jetbrains.kotlin</depends>
+
+  <project-components>
+    <component>
+      <implementation-class>com.pestretsov.plugin.dsl.DSLSettingsConfigurationComponent</implementation-class>
+    </component>
+  </project-components>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <fileTypeFactory implementation="com.pestretsov.plugin.konf.KonfFileTypeFactory"/>
+    <lang.syntaxHighlighterFactory language="Konf" implementationClass="com.pestretsov.plugin.konf.KonfSyntaxHighlighterFactory"/>
+  </extensions>
+
+  <extensions defaultExtensionNs="org.jetbrains.kotlin">
+    <scriptDefinitionContributor id="DSLScriptDefinitionContributor"
+                                 order="before StandardScriptDefinitionContributor"
+                                 implementation="com.pestretsov.plugin.dsl.DSLScriptDefinitionContributor"/>
+  </extensions>
+
+</idea-plugin>

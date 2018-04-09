@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="KotlinCompilerSettings">
+    <option name="scriptTemplates" value="com.example.AgentConfig" />
+    <option name="scriptTemplatesClasspath" value="$PROJECT_DIR$/helper/sample-dsl.jar" />
+  </component>
+</project>
