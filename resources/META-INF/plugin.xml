@@ -1,5 +1,5 @@
 <idea-plugin>
-  <id>com.pestretsov.plugin</id>
+  <id>KonfigDSL</id>
   <name>Konfig DSL plugin</name>
   <version>1.0</version>
   <vendor email="pestretsov@me.com">Artemy Pestretsov</vendor>
@@ -12,6 +12,12 @@
   <idea-version since-build="181.0"/>
 
   <depends>org.jetbrains.kotlin</depends>
+
+  <application-components>
+    <component>
+      <implementation-class>com.pestretsov.plugin.dsl.KonfigDSLAppComponent</implementation-class>
+    </component>
+  </application-components>
 
   <extensions defaultExtensionNs="com.intellij">
     <fileTypeFactory implementation="com.pestretsov.plugin.konf.KonfFileTypeFactory"/>
