@@ -11,6 +11,6 @@ class KonfigDSLAppComponent: ApplicationComponent {
 
     companion object {
         val pluginId = "KonfigDSL"
-        val pluginLibsPath = toSystemIndependentName(getPluginsPath() + "/LivePlugin/lib/")
+        val pluginLibsPath = toSystemIndependentName(getPluginsPath() + "/KonfigDSL/lib/")
     }
 }
