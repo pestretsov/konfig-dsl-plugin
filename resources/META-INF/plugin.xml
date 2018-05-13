@@ -11,6 +11,10 @@
 
   <idea-version since-build="181.0"/>
 
+  <extensionPoints>
+    <extensionPoint name="DSLJarProvider" beanClass="com.pestretsov.plugin.dsl.DSLJarProvider"/>
+  </extensionPoints>
+
   <depends>org.jetbrains.kotlin</depends>
 
   <application-components>
