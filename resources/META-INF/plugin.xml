@@ -13,6 +13,12 @@
 
   <depends>org.jetbrains.kotlin</depends>
 
+  <project-components>
+    <component>
+      <implementation-class>com.pestretsov.plugin.dsl.DSLProjectComponent</implementation-class>
+    </component>
+  </project-components>
+
   <extensions defaultExtensionNs="com.intellij">
     <fileTypeFactory implementation="com.pestretsov.plugin.konf.KonfFileTypeFactory"/>
     <lang.syntaxHighlighterFactory language="Konf" implementationClass="com.pestretsov.plugin.konf.KonfSyntaxHighlighterFactory"/>
